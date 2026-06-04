@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Album Filtered</title>
+    <meta name="description"
+        content="temple images thats going to follow frontend standards and accessibility on differnt device widths. Its going to be filtered to show different temples based eihther size or location.">
+    <meta name="author" content="Marvellous Nwachukwu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand">Temples Album Filtered</div>
+
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id ="old">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div id="temple-grid">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Marvellous Osita Nwachukwu - Nigeria</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
