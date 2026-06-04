@@ -107,9 +107,6 @@ const temples = [
 
 const templeGrid = document.querySelector("#temple-grid");
 
-functioncreateTempleCard(
-
-)
 
 function createTempleCard(templeList) {
     templeGrid.innerHTML = "";
@@ -128,3 +125,46 @@ function createTempleCard(templeList) {
     });
 }
 createTempleCard(temples);
+
+const navLinks = document.querySelectorAll(".navigation a");
+const pageHeading = document.querySelector("main h1");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const filterType = link.textContent.trim();
+        pageHeading.textContent = filterType;
+
+        let filteredTemples = [];
+        switch (filterType) {
+            case "Old":
+                filteredTemples = temples.filter(temple => {
+                    const year = parseInt(temple.dedicated.split(",")[0]);
+                    return year < 2000;
+                });
+                break;
+
+            case "New":
+                filteredTemples = temples.filter(temple => {
+                    const year = parseInt(temple.dedicated.split(",")[0]);
+                    return year > 2000;
+                });
+                break;
+
+            case "Large":
+                filteredTemples = temples.filter(temple => temple.area > 80000);
+                break;
+
+            case "Small":
+                filteredTemples = temples.filter(temple => temple.area < 10000);
+                break;
+
+            case "Home":
+            default:
+                filteredTemples = temples;
+                break;
+        }
+
+        createTempleCard(filteredTemples);
+    });
+});
