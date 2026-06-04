@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 1.3rem;
+}
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    background-color: #0A192F;
+    color: #fae1b4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 4rem;
+    background-color: #112240;
+}
+
+section p {
+    margin-top: 1rem;
+    font-style: oblique;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
