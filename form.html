@@ -22,7 +22,7 @@
           <h1>Product Review</h1>
      </header>
      <main>
-          <form method="get" action="review.html">
+          <form method="get" action="review.html" class="pg">
 
                <fieldset>
                     <legend>Product Name</legend>
@@ -32,12 +32,19 @@
                </fieldset>
                <fieldset>
                     <legend>Overall Rating</legend>
-                    <div class="rating-group">
-                         <label>&star;<br><input type="radio" name="rating" value="1" required></label>
-                         <label>&star;&star;<br><input type="radio" name="rating" value="2"></label>
-                         <label>&star;&star;&star;<br><input type="radio" name="rating" value="3"></label>
-                         <label>&star;&star;&star;&star;<br><input type="radio" name="rating" value="4"></label>
-                         <label>&star;&star;&star;&star;&star;<br><input type="radio" name="rating" value="5"></label>
+                    <div class="rating-container">
+
+                         <label class="rating-item">&star;<br><input type="radio" name="rating" value="1" required></label>
+
+                         <label class="rating-item">&star;&star;<br><input type="radio" name="rating" value="2"></label>
+
+                         <label class="rating-item">&star;&star;&star;<br><input type="radio" name="rating" value="3"></label>
+
+                         <label class="rating-item">&star;&star;&star;&star;<br><input type="radio" name="rating" value="4"></label>
+
+                         <label class="rating-item">&star;&star;&star;&star;&star;<br><input type="radio" name="rating"
+                                   value="5"></label>
+
                     </div>
                </fieldset>
 

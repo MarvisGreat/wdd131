@@ -1,0 +1,118 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f0f4f8;
+}
+
+header{
+  background-color: #191970;
+  color: white;
+  padding: .2rem ;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+footer {
+    background-color: #191970;
+    color: white;
+    padding: .2rem;
+    text-align: center;
+    border-radius: 0 0 6px 6px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+main {
+    padding: 10px;
+    min-height: 20rem;
+    margin-bottom: 10px;
+}
+.pg fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: .5rem ;
+}
+.pg fieldset .italic {
+    font-size: .9rem;
+    font-style: italic;
+    font-weight: normal;
+}
+.pg legend {
+    color: #191970;
+    font-size: 1.1rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.pg label {
+    display: block;
+    padding-top: .8rem;
+    font-size: .9rem;
+}
+
+.pg input[type="text"],
+.pg input[type="date"],
+.pg select,
+.pg textarea
+{
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 500px;
+    color: #191970;
+    font-size: 1rem;
+}
+
+.rating-container {
+    display: flex;
+    gap: 10px;
+    margin-top: -1rem;
+    justify-content: space-around;
+}
+
+.pg input[type="submit"] {
+    background-color: #191970;
+    color: white;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 96%;
+    max-width: 500px;
+    box-shadow: inset 0 0 0 0 #191970;
+    transition: box-shadow 0.3s ease;
+}
+
+.pg input[type="submit"]:hover {
+    background-color: #4597ea;
+    color: #191970;
+}
+
