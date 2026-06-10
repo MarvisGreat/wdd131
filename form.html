@@ -26,6 +26,7 @@
 
                <fieldset>
                     <legend>Product Name</legend>
+                    <label for="product-select" class="sr-only"></label>
                     <select name="product" id="product-select" required>
                          <option value="" disabled selected>Please select a product...</option>
                     </select>
@@ -34,40 +35,39 @@
                     <legend>Overall Rating</legend>
                     <div class="rating-container">
 
-                         <label class="rating-item">&star;<br><input type="radio" name="rating" value="1" required></label>
+                         <label for="rating1" class="rating-item">&star;<br><input type="radio" name="rating" id="rating1" value="1" required></label>
 
-                         <label class="rating-item">&star;&star;<br><input type="radio" name="rating" value="2"></label>
+                         <label for="rating2" class="rating-item">&star;&star;<br><input type="radio" name="rating" id="rating2" value="2" required></label>
 
-                         <label class="rating-item">&star;&star;&star;<br><input type="radio" name="rating" value="3"></label>
+                         <label for="rating3" class="rating-item">&star;&star;&star;<br><input type="radio" name="rating" id="rating3" value="3" required></label>
 
-                         <label class="rating-item">&star;&star;&star;&star;<br><input type="radio" name="rating" value="4"></label>
+                         <label for="rating4" class="rating-item">&star;&star;&star;&star;<br><input type="radio" name="rating" id="rating4" value="4" required></label>
 
-                         <label class="rating-item">&star;&star;&star;&star;&star;<br><input type="radio" name="rating"
-                                   value="5"></label>
+                         <label for="rating5" class="rating-item">&star;&star;&star;&star;&star;<br><input type="radio" name="rating" id="rating5" value="5" required></label>
 
                     </div>
                </fieldset>
 
                <fieldset>
                     <legend>Date of installation</legend>
-                    <label><input type="date" name="installation-date" id="installation-date" required></label>
+                    <label for="installation-date" class="sr-only"><input type="date" name="installation-date" id="installation-date" required></label>
                </fieldset>
                <fieldset>
-                    <legend>Which feature did you find useful in the product? <span class="italic">(Select all that
-                              apply)</span></legend>
-                    <label><input type="checkbox" name="features" value="feature1"> Durability</label>
-                    <label><input type="checkbox" name="features" value="feature2"> Ease of use</label>
-                    <label><input type="checkbox" name="features" value="feature3"> Performance</label>
-                    <label><input type="checkbox" name="features" value="feature4"> Design</label>
+                    <legend>Which feature did you find useful in the product? <span class="italic">(Select all thatapply)</span></legend>
+                    <label for="feat-durability"><input type="checkbox" name="features" id="feat-durability" value="feature1"> Durability</label>
+                    <label for="feat-ease"><input type="checkbox" name="features" id="feat-ease" value="feature2"> Ease of use</label>
+                    <label for="feat-perf"><input type="checkbox" name="features" id="feat-perf" value="feature3"> Performance</label>
+                    <label for="feat-design"><input type="checkbox" name="features" id="feat-design" value="feature4"> Design</label>
                </fieldset>
                <fieldset>
                     <legend>Written Review <span class="italic">(Optional)</span></legend>
+                    <label for="review" class="sr-only"></label>
                     <textarea name="review" id="review" rows="5" cols="50"
                          placeholder="Share your experience with the product..."></textarea>
                </fieldset>
                <fieldset>
                     <legend>Your Name <span class="italic">(Optional)</span></legend>
-                    <input type="text" name="name" id="name" placeholder="Enter your name...">
+                    <label for="name" class="sr-only"><input type="text" name="name" id="name" placeholder="Enter your name..."></label>
                </fieldset>
 
                <input type="submit" value="Submit Review">
