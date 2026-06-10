@@ -117,3 +117,25 @@ form {
     color: #191970;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #191970;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 5px;
+}
+
