@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #f0f4f8;
+
 }
 
 header{
@@ -40,6 +40,7 @@ main {
     padding: 10px;
     min-height: 20rem;
     margin-bottom: 10px;
+    background-color: #f0f4f8;
 }
 .pg fieldset {
     margin: 2rem 0;
