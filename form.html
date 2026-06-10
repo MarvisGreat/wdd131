@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Product Reveiw</title>
+     <meta name="description" content="This is going to serve as a form to recieve costumers review of a product">
+     <meta name="author" content="Marvellous Osita Nwachukwu">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="styles/form.css">
+     <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+     <header>
+          <h1>Product Review</h1>
+     </header>
+     <main>
+          <form method="get" action="review.html">
+
+               <fieldset>
+                    <legend>Product Name</legend>
+                    <select name="product" id="product-select" required>
+                         <option value="" disabled selected>Please select a product...</option>
+                    </select>
+               </fieldset>
+               <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="rating-group">
+                         <label>&star;<br><input type="radio" name="rating" value="1" required></label>
+                         <label>&star;&star;<br><input type="radio" name="rating" value="2"></label>
+                         <label>&star;&star;&star;<br><input type="radio" name="rating" value="3"></label>
+                         <label>&star;&star;&star;&star;<br><input type="radio" name="rating" value="4"></label>
+                         <label>&star;&star;&star;&star;&star;<br><input type="radio" name="rating" value="5"></label>
+                    </div>
+               </fieldset>
+
+               <fieldset>
+                    <legend>Date of installation</legend>
+                    <label><input type="date" name="installation-date" id="installation-date" required></label>
+               </fieldset>
+               <fieldset>
+                    <legend>Which feature did you find useful in the product? <span class="italic">(Select all that
+                              apply)</span></legend>
+                    <label><input type="checkbox" name="features" value="feature1"> Durability</label>
+                    <label><input type="checkbox" name="features" value="feature2"> Ease of use</label>
+                    <label><input type="checkbox" name="features" value="feature3"> Performance</label>
+                    <label><input type="checkbox" name="features" value="feature4"> Design</label>
+               </fieldset>
+               <fieldset>
+                    <legend>Written Review <span class="italic">(Optional)</span></legend>
+                    <textarea name="review" id="review" rows="5" cols="50"
+                         placeholder="Share your experience with the product..."></textarea>
+               </fieldset>
+               <fieldset>
+                    <legend>Your Name <span class="italic">(Optional)</span></legend>
+                    <input type="text" name="name" id="name" placeholder="Enter your name...">
+               </fieldset>
+
+               <input type="submit" value="Submit Review">
+
+
+
+
+
+          </form>
+     </main>
+     <footer>
+          <p>&copy;<span id="currentyear"></span>- Marvellous Osita Nwachukwu - Nigeria</p>
+          <p><span id="lastModified"></span></p>
+     </footer>
+</body>
+
+</html>
