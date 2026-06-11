@@ -1,19 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-  font-family: 'Poppins', sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
 
-header{
-  background-color: #191970;
-  color: #ffffff;
-  padding: .2rem ;
-  text-align: center;
-  border-radius: 6px 6px 0 0;
+header {
+    background-color: #191970;
+    color: #ffffff;
+    padding: .2rem;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
 }
 
 footer {
@@ -23,30 +24,35 @@ footer {
     text-align: center;
     border-radius: 0 0 6px 6px;
 }
+
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 footer p {
     font-size: 1.1rem;
 }
+
 main {
     padding: 10px;
     min-height: 20rem;
     margin-bottom: 10px;
     background-color: #f0f4f8;
 }
+
 .pg fieldset {
     margin: 2rem 0;
     border: 1px solid #dddddd;
     border-radius: 8px;
-    padding: .5rem ;
+    padding: .5rem;
 }
+
 .pg fieldset .italic {
     font-size: .9rem;
     font-style: italic;
     font-weight: normal;
 }
+
 .pg legend {
     color: #191970;
     font-size: 1.1rem;
@@ -63,6 +69,7 @@ form {
     box-sizing: border-box;
     margin-top: 10px;
 }
+
 .pg label {
     display: block;
     padding-top: .8rem;
@@ -72,8 +79,7 @@ form {
 .pg input[type="text"],
 .pg input[type="date"],
 .pg select,
-.pg textarea
-{
+.pg textarea {
     background-color: #ffffff;
     display: block;
     border: solid 1px #999999;
@@ -133,6 +139,12 @@ figcaption {
     margin-top: 5px;
 }
 
+.required {
+    color: #cc0000;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
 
 .sr-only {
     position: absolute;
@@ -145,7 +157,28 @@ figcaption {
     border: 0;
 }
 
+.pg input:required,
+.pg select:required {
+    border-left: solid 8px #cc0000;
+}
+
+.pg input:required:valid,
+.pg select:required:valid {
+    border-left: solid 8px #00cc00;
+}
+
+.rating-container:has(input[type="radio"]:required:invalid) {
+    border-left: 8px solid #cc0000;
+
+}
+
+.rating-container:has(input[type="radio"]:required:valid) {
+    border-left: 8px solid #00cc00;
+
+}
+
 @media screen and (max-width: 768px) {
+
     .pg input[type="text"],
     .pg input[type="date"],
     .pg select,
