@@ -166,3 +166,19 @@ footer {
         flex: 1;
     }
 }
+
+.primary-blue {
+    background-color: var(--primary-color);
+}
+
+.accent-red {
+    background-color: var(--accent-color);
+}
+
+.success-green {
+    background-color: var(--success-color);
+}
+
+.dark-charcoal {
+    background-color: var(--text-dark);
+}
