@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSol Africa | Smart Automotive Diagnostics & OBD-II Solutions</title>
+    <meta name="description" content="AutoSol Africa provides smart automotive diagnostics, 
+    OBD-II error code lookup tools, and interactive vehicle maintenance dashboard simulations.">
+    <meta name="author" content="Marvellous Osita Nwachukwu">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/autosol.css">
+    <script src="scripts/autosol.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/hero.jpg" alt="AutoSol Logo" class="nav-logo-img">
+                AutoSol<span>Africa</span>
+            </div>
+            <button class="hamburger-btn" id="menu-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="diagnostics.html">Diagnostics</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services" class="compact-hero">
+            <h1 class="gradient-text">Diagnostics Center</h1>
+            <p class="section-subtitle">Input vehicle trouble codes to simulate live system diagnostics.</p>
+        </section>
+
+        <div class="content-container">
+            <div class="content-block search-block">
+            <figure class="hero-image-wrapper">
+                <img src="images/caution-img.jpg" alt="AutoSol Africa brand" class="hero-display-img" loading="lazy">
+            </figure>
+                <h2>OBD-II DTC Code Lookup</h2>
+                <p class="block-desc">Enter a 5-character diagnostic trouble code (e.g., P0300, P0420, P0171) to scan
+                    vehicle
+                    status.</p>
+
+                <form id="dtc-form" class="diagnostic-form">
+                    <div class="form-group">
+                        <label for="dtc-input">Enter Error Code:</label>
+                        <input type="text" id="dtc-input" placeholder="e.g., P0300" maxlength="5" required>
+                    </div>
+                    <button type="submit" class="scan-btn">Run Diagnostic Scan</button>
+                </form>
+
+                <div id="scan-result" class="scan-result-display"></div>
+            </div>
+
+            <div class="content-block dashboard-grid">
+                <h2>Simulated Live Dashboard Panel</h2>
+                <p class="block-desc">System engine vital monitors based on current system health.</p>
+
+                <div class="gauges-wrapper">
+                    <div class="gauge-card">
+                        <h3>Engine Temp</h3>
+                        <div class="gauge-value" id="temp-gauge">90°C</div>
+                        <img src="images/car-light.png" alt="Car temp system light" class="gauge-icon">
+                        <p class="gauge-status">Status: Normal</p>
+                    </div>
+                    <div class="gauge-card">
+                        <h3>Battery Voltage</h3>
+                        <div class="gauge-value" id="battery-gauge">14.2V</div>
+                        <img src="images/power-light.png" alt="Car battery system light" class="gauge-icon">
+                        <p class="gauge-status">Status: Charging</p>
+                    </div>
+                    <div class="gauge-card">
+                        <h3>MIL Status</h3>
+                        <div class="gauge-value" id="mil-gauge">OFF</div>
+                        <img src="images/engine-light.png" alt="Car MIL system light" class="gauge-icon">
+                        <p class="gauge-status">Check Engine Light</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 AutoSol Africa. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="reference.html">Citations & References</a>
+                <a href="mailto:autosolafrica@gmail.com?subject=AutoSol%20Africa%20Support%20Inquiry">Contact
+                    Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

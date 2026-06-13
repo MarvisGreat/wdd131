@@ -4,44 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AutoSol Africa | Smart Automotive Diagnostics & OBD-II Solutions</title>
-        <meta name="description" content="AutoSol Africa provides smart automotive diagnostics, 
+    <title>AutoSol Africa | Smart Automotive Diagnostics & OBD-II Solutions</title>
+    <meta name="description" content="AutoSol Africa provides smart automotive diagnostics, 
             OBD-II error code lookup tools, and interactive vehicle maintenance dashboard simulations.">
-        <meta name="author" content="Marvellous Osita Nwachukwu">
-        
-        <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="author" content="Marvellous Osita Nwachukwu">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/autosol.css">
     <script src="scripts/autosol.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/hero.jpg" alt="AutoSol Logo" class="nav-logo-img">
-                AutoSol<span>Africa</span>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/hero.jpg" alt="AutoSol Logo" loading="lazy" class="nav-logo-img">
+            AutoSol<span>Africa</span>
+        </div>
+        <button class="hamburger-btn" id="menu-btn" aria-label="Toggle Navigation Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diagnostics.html">Diagnostics</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+            <li><a href="reference.html">Reference</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h1 class="gradient-text">Smart Automotive Solutions</h1>
+        <p class="section-subtitle">Empowering African drivers with instant, digital vehicle diagnostics.</p>
+        <figure class="hero-image-wrapper">
+            <img src="images/hero-sect.jpg" alt="AutoSol Africa Mechanic banner showcasing smart laptop diagnostics"
+                class="hero-display-img" loading="lazy">
+        </figure>
+    </section>
+
+    <div class="content-container">
+        <div class="wireframe-grid">
+
+            <div class="content-block intro-box">
+                <h2>What is AutoSol Africa?</h2>
+                <p>AutoSol Africa is a next-generation digital vehicle health platform designed to bridge the gap
+                    between drivers and complex automotive technology. By simplifying data retrieved from your vehicle's
+                    onboard computers, we give you real-time insight into engine performance, breakdown prevention, and
+                    fault code interpretations before you even step into a mechanical workshop.</p>
+                <figure class="hero-image-wrapper">
+                    <img src="images/aboutauto-img.jpg"
+                        alt="Local African mechanic accessing diagnostic data at zero cost" class="hero-display-img"
+                        width="800" height="424" loading="lazy">
+                </figure>
             </div>
-            <button class="hamburger-btn" id="menu-btn" aria-label="Toggle Navigation Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-menu" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diagnotics.html">Diagnostics</a></li>
-                <li><a href="maintenance.html">Maintenance</a></li>
-                <li><a href="reference.html">Reference</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="content">
-                <h1>Design That <span class="gradient-text">Breathes.</span></h1>
-                <p>Experience the flow of smooth navigation.</p>
+
+            <div class="content-block educational-card">
+                <h2>How OBD-II Works</h2>
+                <figure class="obd-image-wrapper">
+                    <img src="images/obd-image.jpg" alt="Wireless OBD-II scanner adapter block link"
+                        class="obd-display-img" width="400" height="300" loading="lazy">
+                </figure>
+                <p>Every modern vehicle features an onboard computer system known as <strong>OBD-II (On-Board
+                        Diagnostics)</strong>. This system constantly monitors engine performance, emissions levels, and
+                    electrical sensors throughout your car.</p>
+                <p>When a sensor detects an operational issue, it logs a 5-character Diagnostic Trouble Code (DTC) and
+                    illuminates your Check Engine Light.</p>
             </div>
-        </section>
-    </main>
+
+        </div>
+
+        <div class="cta-container">
+            <a href="diagnostics.html" class="cta-btn">Launch Diagnostics Scanner</a>
+        </div>
+    </div>
+</main>
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 AutoSol Africa. All rights reserved.</p>
