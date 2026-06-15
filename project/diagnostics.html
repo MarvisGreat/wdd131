@@ -11,7 +11,8 @@
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/autosol.css">
-    <script src="scripts/autosol.js"></script>
+    <script src="scripts/autosol.js" defer></script>
+    <script src="scripts/diagnostics.js" defer></script>
 </head>
 
 <body>
@@ -52,13 +53,13 @@
 
                 <form id="dtc-form" class="diagnostic-form">
                     <div class="form-group">
-                        <label for="dtc-input">Enter Error Code:</label>
-                        <input type="text" id="dtc-input" placeholder="e.g., P0300" maxlength="5" required>
+                        <label for="obd-input">Enter Error Code:</label>
+                        <input type="text" id="obd-input" placeholder="e.g., P0300" maxlength="5" required>
                     </div>
-                    <button type="submit" class="scan-btn">Run Diagnostic Scan</button>
+                    <button type="submit" id="scan-btn" class="scan-btn">Run Diagnostic Scan</button>
                 </form>
 
-                <div id="scan-result" class="scan-result-display"></div>
+                <div id="diagnostic-display-box" class="scan-result-display"></div>
             </div>
 
             <div class="content-block dashboard-grid">
