@@ -829,3 +829,47 @@ footer p {
 .submit-btn:active {
     transform: translateY(0);
 }
+
+.result-card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #ccc;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.severity-critical {
+    border-left-color: #ff3333;
+    background: linear-gradient(90deg, rgba(255, 51, 51, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.2);
+}
+
+.severity-critical h3 {
+    color: #ff5555;
+}
+
+.severity-moderate {
+    border-left-color: #ffaa00;
+    background: linear-gradient(90deg, rgba(255, 170, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0 0 15px rgba(255, 170, 0, 0.15);
+}
+
+.severity-moderate h3 {
+    color: #ffbb33;
+}
+
+.severity-low-warning {
+    border-left-color: #33b5e5;
+    background: linear-gradient(90deg, rgba(51, 181, 229, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0 0 15px rgba(51, 181, 229, 0.15);
+}
+
+.severity-low-warning h3 {
+    color: #33b5e5;
+}
+
+.error-state {
+    border-left-color: #888888;
+    background-color: rgba(255, 255, 255, 0.05);
+}
